@@ -11,6 +11,12 @@ In this project,I made use of Python to explore data related to bike share syste
 
 In this project,I used data provided by [Motivate](https://www.motivateco.com/), a bike share system provider for many major cities in the United States, to uncover bike share usage patterns. I also compared the system usage between three large cities: Chicago, New York City, and Washington, DC.
 
+
+### Software Requirements
+You should have 
+* Python 3,NumPy, and pandas installed using Anaconda
+* A text editor, like [Sublime](https://www.sublimetext.com/) or [Atom](https://atom.io/).
+* A terminal application (Terminal on Mac and Linux or Cygwin on Windows).
 ### Files used
 * chicago.csv
 * new_york_city.csv
@@ -19,4 +25,5 @@ In this project,I used data provided by [Motivate](https://www.motivateco.com/),
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
 
