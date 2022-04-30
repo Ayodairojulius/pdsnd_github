@@ -252,7 +252,7 @@ def display_data_frame(df):
              print(df[count:count+5])
         elif raw_data != "yes":
              break
-
+ 
     print('-'*40)
     
 
@@ -268,8 +268,8 @@ def main():
         display_data_frame(df)
         
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        reload = input('\nWould you like to restart? Enter yes or no.\n')
+        if reload.lower() != 'yes':
             break
 
 
