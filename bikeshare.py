@@ -227,32 +227,32 @@ def display_data_frame(df):
     Returns:
         None.
     """
-    EXPECTED_RESPONSE = ['yes', 'no']
-    data = ''
+    ACCEPTABLE_RESPONSE = ['yes', 'no']
+    raw_data = ''
   
     count = 0
-    while data not in EXPECTED_RESPONSE:
+    while raw_data not in ACCEPTABLE_RESPONSE:
         print("\nDo you wish to view the raw data?")
         print("\nAcceptable responses:\nYes or yes\nNo or no")
-        data = input().lower()
+        raw_data = input().lower()
        
-        if data == "yes":
+        if raw_data == "yes":
             print(df.head())
-        elif data not in EXPECTED_RESPONSE:
+        elif raw_data not in ACCEPTABLE_RESPONSE:
             print("\nPlease check your input.")
             print("Input does not seem to match any of the acceptable responses.")
             
    
-    while data == 'yes':
+    while raw_data == 'yes':
         print("Do you wish to view more raw data?")
         count += 5
-        data = input().lower()
+        raw_data = input().lower()
         #If user opts for it, this displays next 5 rows of data
-        if data == "yes":
+        if raw_data == "yes":
              print(df[count:count+5])
-        elif data != "yes":
+        elif raw_data != "yes":
              break
-
+ 
     print('-'*40)
     
 
@@ -268,8 +268,8 @@ def main():
         display_data_frame(df)
         
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        reload = input('\nWould you like to restart? Enter yes or no.\n')
+        if reload.lower() != 'yes':
             break
 
 
